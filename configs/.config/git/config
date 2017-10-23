@@ -1,7 +1,12 @@
 [color]
     ui = auto
+
+[include]
+    path = config_local
+
 [push]
     default = simple
+
 [alias]
     a = add
     aa = add --all
@@ -18,3 +23,4 @@
     rc = rebase --continue
     rs = rebase --skip
     st = status
+
