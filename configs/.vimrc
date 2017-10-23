@@ -13,8 +13,10 @@ set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
+set wildmode=list:longest,full
 set lazyredraw          " redraw only when we need to.
 set showmatch           " highlight matching [{()}]
+set mouse=a             " Enable full mouse support in the console
 
 """ Searching
 set incsearch           " search as characters are entered
@@ -25,3 +27,4 @@ nnoremap j gj           " move vertically by visual line
 nnoremap k gk
 inoremap jk <esc>
 inoremap <esc> <nop>
+
