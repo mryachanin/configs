@@ -1,13 +1,20 @@
+[color]
+    ui = auto
+[push]
+    default = simple
 [alias]
     a = add
     aa = add --all
-    c = commit
-    ca = commit --amend
+    c = commit -v
+    ca = commit -v --amend
     d = diff
-    f = fetch
+    ds = diff --stat
+    dc = diff --cached
+    dcs = diff --cached --stat
+    dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
+    mff = merge --ff-only
     pr = pull --rebase
+    pd = push --delete
+    rc = rebase --continue
+    rs = rebase --skip
     st = status
-
-[user]
-	name = Mike Yachanin
-	email = michael@yachanin.com
