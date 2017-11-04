@@ -10,6 +10,7 @@
 [alias]
     a = add
     aa = add --all
+    bsu = branch --set-upstream-to
     c = commit -v
     ca = commit -v --amend
     d = diff
