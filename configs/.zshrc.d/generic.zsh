@@ -68,8 +68,9 @@ function parse_git_dirty() {
   fi
 }
 
-setopt prompt_subst # Enables additional prompt extentions
-autoload -U colors && colors    # Enables colours
+## TODO: broken?
+#setopt prompt_subst # Enables additional prompt extentions
+#autoload -U colors && colors    # Enables colours
 
 PROMPT='%n@$SHORT_HOST %{%F{cyan}%}%c%{%f%} $(git_prompt_info) %# %{$reset_color%}'
 #RPROMPT='%(?:%{%F{green}%}-> %{%f%}:%{%F{red}%}-> %{%f%})'
