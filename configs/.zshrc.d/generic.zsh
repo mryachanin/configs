@@ -27,6 +27,15 @@ growl() { echo -e $'\e]9;'${1}'\007' ; return ; }
 
 grok() { grep -rnw $1 -e "$2"; }
 
+set-title() {
+    echo -e "\e]0;$*\007"
+}
+
+ssh() {
+    set-title $*;
+    /usr/bin/ssh -2 $*;
+    set-title $HOST;
+}
 
 #### Prompt ####
 # Figure out the SHORT hostname
