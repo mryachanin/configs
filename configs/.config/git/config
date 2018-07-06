@@ -22,6 +22,7 @@
     mff = merge --ff-only
     pr = pull --rebase
     pd = push --delete
+    pdo = push --delete origin
     rc = rebase --continue
     rs = rebase --skip
     st = status
