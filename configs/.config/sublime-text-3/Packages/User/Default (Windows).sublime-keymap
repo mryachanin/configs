@@ -1,0 +1,3 @@
+[
+	{"keys": ["j", "k"], "command": "six_press_key", "args": {"key": "<Esc>"}, "context": [{"key": "six_is_in_insert_mode"}, {"key": "six_is_accepting_input", "operand": false}]}
+]
