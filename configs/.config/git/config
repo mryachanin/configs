@@ -10,10 +10,12 @@
 [alias]
     a = add
     aa = add --all
+    b = branch
     bd = branch -D
     bsu = branch --set-upstream-to
     c = commit -v
     ca = commit -v --amend
+    co = checkout
     d = diff
     ds = diff --stat
     dc = diff --cached
@@ -21,9 +23,14 @@
     dag = log --graph --format='format:%C(yellow)%h%C(reset) %C(blue)\"%an\" <%ae>%C(reset) %C(magenta)%ar%C(reset)%C(auto)%d%C(reset)%n%s' --date-order
     mff = merge --ff-only
     pr = pull --rebase
+    prune = fetch --prune
+    prom = pull --rebase origin master
     pd = push --delete
     pdo = push --delete origin
+    po = push origin
+    pfo = push --force origin
     rc = rebase --continue
     rs = rebase --skip
+    ss = show --stat
     st = status
 
