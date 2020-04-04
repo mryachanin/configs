@@ -1,10 +1,22 @@
 [color]
+    # Color output when being directed straight to a terminal.
+    # Do not include color control-codes when outputing to a pipe or file.
     ui = auto
 
+[core]
+    # Automatically convert to LF when adding to index (i.e. on "input" to the index).
+    # Do not convert back to crlf on checkout (i.e. on output).
+    autocrlf = input
+
 [include]
-    path = config_local
+    # This assumes ./config_local.sample was moved to ~/.config/git/config_local
+    # during config installation using install_configs.sh.
+    path = ./config_local
 
 [push]
+    # Push only current branch to upstream. Fail to push branch if name of
+    # upstream differs from local.
+    # See: https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushdefault
     default = simple
 
 [alias]
