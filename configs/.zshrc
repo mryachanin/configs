@@ -5,3 +5,7 @@ do
     . $rc
 done
 
+# Enable auto-completion
+autoload -Uz compinit
+compinit
+
