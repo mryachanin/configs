@@ -8,3 +8,6 @@
 # present.
 export EDITOR=vim
 export VISUAL=$EDITOR
+
+# Set prompt to '[username@hostname:dir]% '
+export PROMPT='[%n@%m:%c]%# '
