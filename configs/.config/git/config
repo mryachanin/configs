@@ -19,6 +19,9 @@
     # See: https://git-scm.com/docs/git-config#Documentation/git-config.txt-pushdefault
     default = simple
 
+[pull]
+    ff = only
+
 [alias]
     a = add
     aa = add --all
